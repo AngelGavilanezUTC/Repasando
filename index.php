@@ -30,7 +30,7 @@
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        <!-- TITULOS DE LAS TABLAS A MOSTRAR -->
                         <th>Title</th>
                         <th>Description</th>
                         <th>Created at</th>
@@ -45,8 +45,7 @@
                     
                     while ($row = mysqli_fetch_array($result_tasks)) { ?>
                         <tr>
-
-                            <td><?php echo $row['id']?></td>
+                            <!-- datos de la BDD -->
                             <td><?php echo $row['title']?></td>
                             <td><?php echo $row['description']?></td>
                             <td><?php echo $row['created_at']?></td>
